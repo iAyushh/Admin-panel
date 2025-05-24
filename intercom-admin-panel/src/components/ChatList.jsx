@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const dummyChats = [
   { id: "1", name: "Luis - Github", time: "45m" },
   { id: "2", name: "Ivan - Nike", time: "3min" },
-  { id: "3", name: "Lead from New York", time: "40m" },
+  { id: "3", name: "Lead from NY", time: "40m" },
 ];
 
 export default function ChatList({ selectedId }) {
@@ -32,7 +32,8 @@ export default function ChatList({ selectedId }) {
             <div className="text-xs text-gray-500">{chat.time}</div>
           </div>
           <Avatar className="h-6 w-6 bg-gray-200 text-gray-800">
-            {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
+            <AvatarImage   src={`https://avatar.iran.liara.run/public/boy?username=${encodeURIComponent(chat.name)}`}
+            />
             <AvatarFallback className="text-sm font-medium">
               {chat.name[0]}
             </AvatarFallback>
