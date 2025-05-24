@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "./ui/separator";
 
 function ChatCopilot() {
   return (
@@ -10,6 +11,7 @@ function ChatCopilot() {
             <TabsTrigger value="account">AI Copilot✨ </TabsTrigger>
             <TabsTrigger value="password">Details</TabsTrigger>
           </TabsList>
+          <Separator/>
           <TabsContent value="account">
             Hey I am AI Copilot
             <p className="text-sm text-muted-foreground">
