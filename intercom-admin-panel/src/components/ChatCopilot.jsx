@@ -3,22 +3,21 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function ChatCopilot() {
   return (
-    <div className="w-75 overflow-hidden border-l p-4 bg-muted/20 flex flex-col justify-between">
+    <div className="w-76 overflow-hidden border-l p-4 bg-muted/20 flex flex-col justify-between">
       <div>
-        <Tabs defaultValue="account" className="w-[400px]">
+        <Tabs defaultValue="account" className="w-75">
           <TabsList>
-            <TabsTrigger value="account">AI Copilot</TabsTrigger>
+            <TabsTrigger value="account">AI Copilot✨ </TabsTrigger>
             <TabsTrigger value="password">Details</TabsTrigger>
           </TabsList>
           <TabsContent value="account">
-            Make changes to your account here.
+            Hey I am AI Copilot
+            <p className="text-sm text-muted-foreground">
+              Ask me anything about this conversation.
+            </p>
           </TabsContent>
-          <TabsContent value="password">Change your password here.</TabsContent>
+          <TabsContent value="password">Details appear here.</TabsContent>
         </Tabs>
-
-        <p className="text-sm text-muted-foreground">
-          Ask me anything about this conversation.
-        </p>
       </div>
       <div className="mt-4">
         <input
