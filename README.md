@@ -38,6 +38,7 @@ Edit
 npm run dev
 
 ###🔗 Deployment
+Live Demo: https://admin-panel-dusky-sigma-59.vercel.app/
 This project is deployed using Vercel. You can easily deploy by connecting your GitHub repo to Vercel and following the default setup for Vite.
 
 📦 Tech Stack
