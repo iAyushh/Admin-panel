@@ -14,7 +14,7 @@ export default function ChatList({ selectedId }) {
   const navigate = useNavigate();
 
   return (
-    <div className="w-74 border-r p-4 space-y-2 bg-white">
+    <div className="w-full md:w-auto p-4 space-y-2 bg-white">
       <h1 className="font-semibold mb-2">Your Inbox</h1>
       <Separator />
 

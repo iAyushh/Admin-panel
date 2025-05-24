@@ -33,9 +33,9 @@ export default function Conversation() {
   if (!chat) return <div className="p-4">Chat not found.</div>;
 
   return (
-    <div className="bg-white p-3 rounded-lg shadow h-full max-w-[900px] mx-auto  space-y-3">
-      {/* Heading close to the separator */}
-      <h2 className="text-lg font-semibold leading-tight">{chat.name}</h2>
+    <div className="bg-white p-4 sm:p-6 rounded-lg shadow h-full w-full max-w-4xl mx-auto overflow-y-auto space-y-4">
+      {/* Chat Header */}
+      <h2 className="text-base sm:text-lg font-semibold leading-tight">{chat.name}</h2>
       <Separator className="mb-2" />
 
       {/* Messages */}
@@ -45,7 +45,7 @@ export default function Conversation() {
           className={`flex ${msg.from === 'agent' ? 'justify-end' : 'justify-start'}`}
         >
           <div
-            className={`p-3 rounded-xl max-w-[75%] ${
+            className={`p-3 rounded-xl max-w-[85%] sm:max-w-[75%] break-words ${
               msg.from === 'user'
                 ? 'bg-muted text-black'
                 : 'bg-violet-200 text-black'
